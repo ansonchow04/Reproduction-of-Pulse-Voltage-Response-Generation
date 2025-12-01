@@ -6,9 +6,9 @@ import pandas as pd
 # 根据不同的电池型号
 cap_mat = '10Ah LMO'
 # 文件路径
-source_folder = '../RPVGdata/RawData/' + cap_mat + '/'
+source_folder = '../PVRGdata/RawData/' + cap_mat + '/'
 # 目标路径（需要提前创建！）
-save_folder = '../RPVGdata/ProcessingData/step_1_extract workstep sheet/' + cap_mat + '/'
+save_folder = '../PVRGdata/ProcessingData/step_1_extract workstep sheet/' + cap_mat + '/'
 sheet_name = '工步层' # 所有工步层都在1-1文件，不会出现在1-2
 xlsx_files = [f for f in os.listdir(source_folder) if f.endswith('.xlsx') and not f.startswith('~$')] # list of all xlsx files in the source folder
 xlsx_files_num = len(xlsx_files)
